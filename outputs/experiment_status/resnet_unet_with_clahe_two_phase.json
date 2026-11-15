@@ -1,0 +1,6 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "mode": "two_phase",
+  "epoch": 20,
+  "best_val_dice": 0.424244642947559
+}

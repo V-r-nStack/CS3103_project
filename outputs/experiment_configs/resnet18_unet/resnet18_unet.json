@@ -1,0 +1,13 @@
+{
+  "architecture": "ResNet18 U-Net",
+  "image_width": 512,
+  "image_height": 640,
+  "epochs": 20,
+  "freeze_epochs": 2,
+  "encoder_learning_rate": 1e-05,
+  "decoder_learning_rate": 0.0001,
+  "threshold": 0.5,
+  "pretrained_encoder": true,
+  "normalization_mean": 0.18653708696365356,
+  "normalization_std": 0.200462207198143
+}

@@ -1,0 +1,42 @@
+{
+  "approach": "two_phase",
+  "split": "validation",
+  "checkpoint": "outputs/checkpoints/resnet18_unet/two_phase/best.pth",
+  "evaluated_images": 108,
+  "valid_hd95_cases": 93,
+  "empty_mask_edge_cases": 15,
+  "hd95_units": "original image pixels",
+  "empty_mask_convention": "both empty=0; exactly one empty=inf",
+  "hd95": {
+    "mean": 86.26364318834747,
+    "std": 212.47430315818465,
+    "median": 34.04775522473708,
+    "min": 3.0,
+    "max": 1526.9129046193789
+  },
+  "bce_loss": {
+    "mean": 0.031396438003327976,
+    "std": 0.038740741769937616,
+    "aggregate_image_averaged": 0.031396438003327976
+  },
+  "metrics": {
+    "dice": {
+      "mean": 0.4324372584931773,
+      "std": 0.3179110215745563
+    },
+    "iou": {
+      "mean": 0.3749721702025019,
+      "std": 0.2593081988647119
+    },
+    "precision": {
+      "mean": 0.6205461832482934,
+      "std": 0.34415640128614533
+    },
+    "recall": {
+      "mean": 0.4020311663676836,
+      "std": 0.3439162134615646
+    }
+  },
+  "parameters": 14499265,
+  "inference_seconds_per_image": 0.10790363726792512
+}

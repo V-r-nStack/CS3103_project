@@ -1,0 +1,143 @@
+{
+  "DeepLabV3+ ResNet18 raw (new)": {
+    "experiment_name": "deeplabv3plus_resnet18_raw",
+    "split": "test",
+    "preprocessing": "original/raw",
+    "encoder": "ImageNet-pretrained ResNet18 (frozen)",
+    "resolution_width_height": [
+      512,
+      640
+    ],
+    "threshold": 0.5,
+    "evaluated_images": 108,
+    "valid_hd95_cases": 92,
+    "hd95_units": "resized image pixels",
+    "empty_mask_convention": "both empty=0; exactly one empty=inf",
+    "hd95": {
+      "mean": 87.37283360913928,
+      "std": 83.12836882954157,
+      "median": 50.82629319578491,
+      "min": 8.0,
+      "max": 332.9141007515971
+    },
+    "metrics": {
+      "dice": {
+        "mean": 0.27202633423979,
+        "std": 0.2608374293916685
+      },
+      "iou": {
+        "mean": 0.18677738056604445,
+        "std": 0.19598674117880086
+      },
+      "precision": {
+        "mean": 0.4700514662892401,
+        "std": 0.36877671820740787
+      },
+      "recall": {
+        "mean": 0.40023933448308757,
+        "std": 0.39871805710472025
+      }
+    },
+    "bce_loss": {
+      "mean": 0.04494182704635292
+    },
+    "parameters": 16602529,
+    "training_time_seconds": 665.4426164699998,
+    "inference_seconds_per_image": 0.011772099231603972,
+    "checkpoint": "outputs/checkpoints/deeplabv3plus_resnet18_raw/best.pth"
+  },
+  "DeepLabV3+ ResNet18 CLAHE (new)": {
+    "experiment_name": "deeplabv3plus_resnet18_clahe",
+    "split": "test",
+    "preprocessing": "CLAHE clipLimit=2.0 tileGridSize=(8,8)",
+    "encoder": "ImageNet-pretrained ResNet18 (frozen)",
+    "resolution_width_height": [
+      512,
+      640
+    ],
+    "threshold": 0.5,
+    "evaluated_images": 108,
+    "valid_hd95_cases": 81,
+    "hd95_units": "resized image pixels",
+    "empty_mask_convention": "both empty=0; exactly one empty=inf",
+    "hd95": {
+      "mean": 89.12312497228714,
+      "std": 86.39260465607393,
+      "median": 50.96995877720302,
+      "min": 6.031212214750939,
+      "max": 321.645767887594
+    },
+    "metrics": {
+      "dice": {
+        "mean": 0.26926908328964766,
+        "std": 0.27451469515329896
+      },
+      "iou": {
+        "mean": 0.18826715782739975,
+        "std": 0.2077477666589974
+      },
+      "precision": {
+        "mean": 0.6141606938606071,
+        "std": 0.3785038444773881
+      },
+      "recall": {
+        "mean": 0.302788039183619,
+        "std": 0.3300880005484149
+      }
+    },
+    "bce_loss": {
+      "mean": 0.038561700841118755
+    },
+    "parameters": 16602529,
+    "training_time_seconds": 656.375033888009,
+    "inference_seconds_per_image": 0.011754986666818257,
+    "checkpoint": "outputs/checkpoints/deeplabv3plus_resnet18_clahe/best.pth"
+  },
+  "Vanilla U-Net raw (existing)": {
+    "status": "measured",
+    "dice": 0.23579770526910965,
+    "iou": 0.16317499018588713,
+    "precision": 0.28595529270968467,
+    "recall": 0.28330785111418516,
+    "hd95": null,
+    "bce": null,
+    "parameters": 1942577,
+    "training_time_seconds": 635.7311010360718,
+    "inference_time_seconds_per_image": null,
+    "unavailable_metrics": [
+      "hd95",
+      "bce",
+      "inference_time_seconds_per_image"
+    ]
+  },
+  "ResNet18 U-Net raw (existing)": {
+    "status": "measured",
+    "dice": 0.48680900636125424,
+    "iou": 0.4144139701657693,
+    "precision": 0.6192838219533303,
+    "recall": 0.598487798284886,
+    "hd95": 70.60664730341905,
+    "bce": 0.019200974730429827,
+    "parameters": 14499265,
+    "training_time_seconds": null,
+    "inference_time_seconds_per_image": 0.09623865728025083,
+    "unavailable_metrics": [
+      "training_time_seconds"
+    ]
+  },
+  "ResNet18 U-Net CLAHE (existing)": {
+    "status": "measured",
+    "dice": 0.5143314877963926,
+    "iou": 0.43370639303231795,
+    "precision": 0.6307745437419127,
+    "recall": 0.58760150031014,
+    "hd95": 98.27510786130037,
+    "bce": 0.022877428404710912,
+    "parameters": 14499265,
+    "training_time_seconds": null,
+    "inference_time_seconds_per_image": 0.09753841161727905,
+    "unavailable_metrics": [
+      "training_time_seconds"
+    ]
+  }
+}

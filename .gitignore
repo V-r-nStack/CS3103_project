@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Source dataset and converted annotations/images
+dataset_dir/
+
+# Generated validation and visualization artifacts
+diagnostics/
+final/visualisations/preprocessing/
+
+# Generated training data and model artifacts
+outputs/preprocessing/
+outputs/checkpoints/
+*.pth
+*.pt
+*.onnx
+
+# Temporary logs and caches
+*.log
+*.tmp

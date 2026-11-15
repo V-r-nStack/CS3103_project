@@ -1,0 +1,39 @@
+{
+  "dataset": "FracAtlas",
+  "experiment_name": "vanilla_unet",
+  "annotated_images": 715,
+  "polygon_regions": 912,
+  "split_counts": {
+    "train": 499,
+    "validation": 108,
+    "test": 108
+  },
+  "input_resolution_width_height": [
+    512,
+    640
+  ],
+  "tensor_shape": [
+    3,
+    640,
+    512
+  ],
+  "architecture": "Vanilla U-Net",
+  "parameters": 1942577,
+  "trainable_parameters": 1942577,
+  "best_validation_dice": 0.2017110316374558,
+  "best_epoch": 18,
+  "test_metrics": {
+    "dice": 0.23579770526910965,
+    "iou": 0.16317499018588713,
+    "precision": 0.28595529270968467,
+    "recall": 0.28330785111418516
+  },
+  "training_duration_seconds": 635.7311010360718,
+  "peak_gpu_memory_mb": 1399.28466796875,
+  "checkpoint": "outputs/checkpoints/vanilla_unet/best.pth",
+  "normalization": {
+    "mean": 0.19784314930438995,
+    "std": 0.19943557679653168
+  },
+  "shared_preprocessing_root": "outputs/preprocessing"
+}

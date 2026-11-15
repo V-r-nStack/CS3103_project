@@ -1,0 +1,124 @@
+{
+  "validation": {
+    "experiment_name": "resnet_unet_with_clahe",
+    "mode": "frozen_encoder",
+    "split": "validation",
+    "checkpoint": "/home/theChosenOne/Projects/ml-project/outputs/checkpoints/resnet_unet_with_clahe/frozen_encoder/best.pth",
+    "threshold": 0.3,
+    "evaluated_images": 108,
+    "valid_hd95_cases": 102,
+    "hd95_units": "original image pixels",
+    "empty_mask_convention": "both empty=0; exactly one empty=inf",
+    "hd95": {
+      "mean": 116.45843069002782,
+      "std": 274.4435188821706,
+      "median": 87.55675869295908,
+      "min": 4.242640687119285,
+      "max": 1587.5340065938
+    },
+    "bce_loss": {
+      "mean": 0.02963044660929073,
+      "std": 0.032933414191234585
+    },
+    "metrics": {
+      "dice": {
+        "mean": 0.46352779682363495,
+        "std": 0.2704001087462241
+      },
+      "iou": {
+        "mean": 0.35765862212745877,
+        "std": 0.21759975554034938
+      },
+      "precision": {
+        "mean": 0.56470533840367134,
+        "std": 0.31804981067865246
+      },
+      "recall": {
+        "mean": 0.52978182994621705,
+        "std": 0.3374089119291693
+      }
+    },
+    "parameters": 14499265,
+    "inference_seconds_per_image": 0.11198446927247224
+  },
+  "test": {
+    "experiment_name": "resnet_unet_with_clahe",
+    "mode": "frozen_encoder",
+    "split": "test",
+    "checkpoint": "/home/theChosenOne/Projects/ml-project/outputs/checkpoints/resnet_unet_with_clahe/frozen_encoder/best.pth",
+    "threshold": 0.3,
+    "evaluated_images": 108,
+    "valid_hd95_cases": 106,
+    "hd95_units": "original image pixels",
+    "empty_mask_convention": "both empty=0; exactly one empty=inf",
+    "hd95": {
+      "mean": 98.27510786130037,
+      "std": 195.93436265153787,
+      "median": 76.64649820692281,
+      "min": 3.605551275463989,
+      "max": 1774.0068201819354
+    },
+    "bce_loss": {
+      "mean": 0.022877428404710912,
+      "std": 0.018329393325246232
+    },
+    "metrics": {
+      "dice": {
+        "mean": 0.51433148779639265,
+        "std": 0.27403187484247316
+      },
+      "iou": {
+        "mean": 0.43370639303231797,
+        "std": 0.227071987403877
+      },
+      "precision": {
+        "mean": 0.6307745437419127,
+        "std": 0.3041243601360956
+      },
+      "recall": {
+        "mean": 0.58760150031014,
+        "std": 0.32432238297116445
+      }
+    },
+    "parameters": 14499265,
+    "inference_seconds_per_image": 0.09753841161727905
+  },
+  "threshold_selection": [
+    {
+      "threshold": 0.3,
+      "dice": 0.3625250144018705
+    },
+    {
+      "threshold": 0.35,
+      "dice": 0.3613275167170084
+    },
+    {
+      "threshold": 0.39999999999999997,
+      "dice": 0.3602328723106809
+    },
+    {
+      "threshold": 0.44999999999999996,
+      "dice": 0.35924917815201396
+    },
+    {
+      "threshold": 0.49999999999999994,
+      "dice": 0.35859394907364966
+    },
+    {
+      "threshold": 0.5499999999999999,
+      "dice": 0.35800604318285845
+    },
+    {
+      "threshold": 0.5999999999999999,
+      "dice": 0.356945242508556
+    },
+    {
+      "threshold": 0.6499999999999999,
+      "dice": 0.3554916301035081
+    },
+    {
+      "threshold": 0.7,
+      "dice": 0.3541156897640408
+    }
+  ]
+}

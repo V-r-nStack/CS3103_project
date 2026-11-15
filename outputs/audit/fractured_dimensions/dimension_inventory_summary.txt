@@ -1,0 +1,18 @@
+FracAtlas Fractured Image Dimension Inventory
+================================================
+Source directory: /home/theChosenOne/Projects/ml-project/dataset_dir/FracAtlas/images/Fractured
+Total image files: 717
+Readable images: 717
+Unreadable/error images: 0
+Unique width-height combinations: 9
+
+Dimension frequencies (width x height):
+  373x454: 530 (73.9191%)
+  2304x2880: 90 (12.5523%)
+  454x373: 82 (11.4365%)
+  1760x2140: 7 (0.9763%)
+  2880x2304: 4 (0.5579%)
+  373x214: 1 (0.1395%)
+  181x454: 1 (0.1395%)
+  296x454: 1 (0.1395%)
+  1727x2049: 1 (0.1395%)

@@ -1,0 +1,42 @@
+{
+  "approach": "frozen_encoder",
+  "split": "validation",
+  "checkpoint": "outputs/checkpoints/resnet18_unet/frozen_encoder/best.pth",
+  "evaluated_images": 108,
+  "valid_hd95_cases": 98,
+  "empty_mask_edge_cases": 10,
+  "hd95_units": "original image pixels",
+  "empty_mask_convention": "both empty=0; exactly one empty=inf",
+  "hd95": {
+    "mean": 102.88434268601998,
+    "std": 231.49293958441046,
+    "median": 52.00500985496378,
+    "min": 3.0,
+    "max": 1530.0828723376396
+  },
+  "bce_loss": {
+    "mean": 0.022675711196993856,
+    "std": 0.0216631088106134,
+    "aggregate_image_averaged": 0.022675711196993856
+  },
+  "metrics": {
+    "dice": {
+      "mean": 0.501921544722186,
+      "std": 0.28301217209732576
+    },
+    "iou": {
+      "mean": 0.41677094052152954,
+      "std": 0.2316126221886852
+    },
+    "precision": {
+      "mean": 0.5815080614358039,
+      "std": 0.3182448370689957
+    },
+    "recall": {
+      "mean": 0.58288345392072296,
+      "std": 0.33527467832525004
+    }
+  },
+  "parameters": 14499265,
+  "inference_seconds_per_image": 0.10531235624242712
+}

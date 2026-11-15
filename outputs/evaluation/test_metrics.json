@@ -1,0 +1,33 @@
+{
+  "dice": {
+    "mean": 0.23579770526910965,
+    "std": 0.26461034853431903
+  },
+  "iou": {
+    "mean": 0.16317499018588713,
+    "std": 0.1986396002008214
+  },
+  "precision": {
+    "mean": 0.28595529270968467,
+    "std": 0.3129206912328864
+  },
+  "recall": {
+    "mean": 0.28330785111418516,
+    "std": 0.33478781370524113
+  },
+  "bce_loss": {
+    "mean": 0.0334706658333609,
+    "std": 0.02524745454531101
+  },
+  "hd95_pixels": {
+    "mean": null,
+    "std": null,
+    "finite_mean": 158.991498818523,
+    "finite_std": 112.87360246508038,
+    "infinite_count": 5
+  },
+  "test_images": 108,
+  "checkpoint": "outputs/checkpoints/vanilla_unet/best.pth",
+  "threshold": 0.5,
+  "hd95_units": "pixels"
+}

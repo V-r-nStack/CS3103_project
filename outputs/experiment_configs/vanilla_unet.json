@@ -1,0 +1,41 @@
+{
+  "experiment_name": "vanilla_unet",
+  "dataset_root": "dataset_dir/FracAtlas",
+  "annotation_json": "dataset_dir/FracAtlas/Annotations/VGG JSON/VGG_fracture_masks.json",
+  "shared_preprocessing_root": "outputs/preprocessing",
+  "shared_mask_dir": "outputs/preprocessing/masks",
+  "shared_split_dir": "outputs/preprocessing/splits",
+  "seed": 42,
+  "image_width": 512,
+  "image_height": 640,
+  "split_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "physical_batch_size": 2,
+  "gradient_accumulation_steps": 2,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "loss_weights": [
+    0.5,
+    0.5
+  ],
+  "threshold": 0.5,
+  "num_workers": 0,
+  "architecture": "Vanilla U-Net",
+  "channels": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "checkpoint_dir": "outputs/checkpoints/vanilla_unet",
+  "history_dir": "outputs/histories/vanilla_unet",
+  "evaluation_dir": "outputs/evaluation/vanilla_unet",
+  "visualization_dir": "outputs/visualizations/vanilla_unet",
+  "normalization_mean": 0.18653708696365356,
+  "normalization_std": 0.200462207198143
+}

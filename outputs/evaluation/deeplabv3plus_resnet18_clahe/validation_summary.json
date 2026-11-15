@@ -1,0 +1,47 @@
+{
+  "experiment_name": "deeplabv3plus_resnet18_clahe",
+  "split": "validation",
+  "preprocessing": "CLAHE clipLimit=2.0 tileGridSize=(8,8)",
+  "encoder": "ImageNet-pretrained ResNet18 (frozen)",
+  "resolution_width_height": [
+    512,
+    640
+  ],
+  "threshold": 0.5,
+  "evaluated_images": 108,
+  "valid_hd95_cases": 84,
+  "hd95_units": "resized image pixels",
+  "empty_mask_convention": "both empty=0; exactly one empty=inf",
+  "hd95": {
+    "mean": 89.52592518388084,
+    "std": 98.63198685246189,
+    "median": 39.061437116857455,
+    "min": 4.920820393249934,
+    "max": 435.59240931976234
+  },
+  "metrics": {
+    "dice": {
+      "mean": 0.36093730541968146,
+      "std": 0.2720276167029858
+    },
+    "iou": {
+      "mean": 0.2821386490819721,
+      "std": 0.20720384951086804
+    },
+    "precision": {
+      "mean": 0.5490530390323305,
+      "std": 0.3830300706784479
+    },
+    "recall": {
+      "mean": 0.49000437200533783,
+      "std": 0.3728993260181003
+    }
+  },
+  "bce_loss": {
+    "mean": 0.048135716597446136
+  },
+  "parameters": 16602529,
+  "training_time_seconds": 656.375033888009,
+  "inference_seconds_per_image": 0.01194354085203452,
+  "checkpoint": "outputs/checkpoints/deeplabv3plus_resnet18_clahe/best.pth"
+}

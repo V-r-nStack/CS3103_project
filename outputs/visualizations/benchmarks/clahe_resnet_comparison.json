@@ -1,0 +1,58 @@
+[
+  {
+    "experiment": "resnet18_unet_frozen",
+    "description": "ResNet18 U-Net / original images / frozen encoder",
+    "dice": 0.48680900636125424,
+    "iou": 0.4144139701657693,
+    "precision": 0.6192838219533303,
+    "recall": 0.598487798284886,
+    "hd95": 70.60664730341905,
+    "bce": 0.019200974730429827,
+    "training_time_seconds": 502.3417432308197,
+    "inference_time_seconds_per_image": 0.09623865728025083,
+    "parameter_count": 14499265,
+    "status": "measured"
+  },
+  {
+    "experiment": "resnet18_unet_two_phase",
+    "description": "ResNet18 U-Net / original images / two-phase fine-tuning",
+    "dice": 0.4579252481572121,
+    "iou": 0.34979030865765215,
+    "precision": 0.6969729098754261,
+    "recall": 0.4426817882714733,
+    "hd95": 56.02243967725693,
+    "bce": 0.024495457637520437,
+    "training_time_seconds": 558.7769560813904,
+    "inference_time_seconds_per_image": 0.09471617363117359,
+    "parameter_count": 14499265,
+    "status": "measured"
+  },
+  {
+    "experiment": "resnet_unet_with_clahe_frozen_encoder",
+    "description": "ResNet18 U-Net / CLAHE images / frozen_encoder",
+    "dice": 0.5143314877963926,
+    "iou": 0.43370639303231795,
+    "precision": 0.6307745437419127,
+    "recall": 0.58760150031014,
+    "hd95": 98.27510786130037,
+    "bce": 0.022877428404710912,
+    "training_time_seconds": 433.5304608345032,
+    "inference_time_seconds_per_image": 0.09753841161727905,
+    "parameter_count": 14499265,
+    "status": "measured"
+  },
+  {
+    "experiment": "resnet_unet_with_clahe_two_phase",
+    "description": "ResNet18 U-Net / CLAHE images / two_phase",
+    "dice": 0.467629111739791,
+    "iou": 0.3548862400454465,
+    "precision": 0.5836662599630733,
+    "recall": 0.5117164696758244,
+    "hd95": 80.7155476321553,
+    "bce": 0.019132226309954637,
+    "training_time_seconds": 572.3851821422577,
+    "inference_time_seconds_per_image": 0.09804794964966951,
+    "parameter_count": 14499265,
+    "status": "measured"
+  }
+]

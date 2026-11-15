@@ -1,0 +1,43 @@
+{
+  "architecture": "ResNet18 U-Net",
+  "image_width": 512,
+  "image_height": 640,
+  "epochs": 20,
+  "freeze_epochs": 2,
+  "encoder_learning_rate": 1e-05,
+  "decoder_learning_rate": 0.0001,
+  "threshold": 0.5,
+  "pretrained_encoder": true,
+  "normalization_mean": 0.18653708696365356,
+  "normalization_std": 0.200462207198143,
+  "experiment_name": "resnet_unet_with_clahe",
+  "preprocessing": {
+    "clipLimit": 2.0,
+    "tileGridSize": [
+      8,
+      8
+    ],
+    "channels": 3
+  },
+  "weight_decay": 0.0001,
+  "physical_batch_size": 2,
+  "gradient_accumulation_steps": 2,
+  "num_workers": 0,
+  "modes": {
+    "frozen_encoder": {
+      "encoder_trainable": false,
+      "freeze_epochs": 20,
+      "encoder_learning_rate": 0.0,
+      "decoder_learning_rate": 0.0001
+    },
+    "two_phase": {
+      "encoder_trainable": true,
+      "freeze_epochs": 2,
+      "encoder_learning_rate": 1e-05,
+      "decoder_learning_rate": 0.0001
+    }
+  },
+  "checkpoint_root": "/home/theChosenOne/Projects/ml-project/outputs/checkpoints/resnet_unet_with_clahe",
+  "history_root": "/home/theChosenOne/Projects/ml-project/outputs/histories/resnet_unet_with_clahe",
+  "evaluation_root": "/home/theChosenOne/Projects/ml-project/outputs/evaluation/resnet_unet_with_clahe"
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "epoch": 1,
+    "mode": "two_phase",
+    "phase": "frozen_encoder",
+    "encoder_trainable": false,
+    "train_loss": 0.7423132610225487,
+    "train_dice": 0.006092797895798863,
+    "val_loss": 0.7029765976799859,
+    "val_dice": 1.205810327615715e-09,
+    "duration_seconds": 22.748231649398804
+  },
+  {
+    "epoch": 2,
+    "mode": "two_phase",
+    "phase": "frozen_encoder",
+    "encoder_trainable": false,
+    "train_loss": 0.6653057468200255,
+    "train_dice": 1.4332961163874498e-05,
+    "val_loss": 0.6262198079515386,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 23.45695924758911
+  },
+  {
+    "epoch": 3,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.5977559172079893,
+    "train_dice": 1.1926006094499545e-09,
+    "val_loss": 0.5730690073083948,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 27.926344871520996
+  },
+  {
+    "epoch": 4,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.5499603983634459,
+    "train_dice": 1.1925886877349475e-09,
+    "val_loss": 0.5313061564056961,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 28.378314971923828
+  },
+  {
+    "epoch": 5,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.517014779165417,
+    "train_dice": 1.1936185458531265e-09,
+    "val_loss": 0.5072969435541718,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 28.385446548461914
+  },
+  {
+    "epoch": 6,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.49056070051594586,
+    "train_dice": 1.1925553294822477e-09,
+    "val_loss": 0.48314687499293574,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 30.82730460166931
+  },
+  {
+    "epoch": 7,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.463985881669249,
+    "train_dice": 1.1927165006032305e-09,
+    "val_loss": 0.4644748154613707,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 29.322337865829468
+  },
+  {
+    "epoch": 8,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.4349226968919108,
+    "train_dice": 1.1930434404812064e-09,
+    "val_loss": 0.4307096666759915,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 29.008342027664185
+  },
+  {
+    "epoch": 9,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.40578284686457416,
+    "train_dice": 1.192773451985162e-09,
+    "val_loss": 0.40702287742385157,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 29.44701623916626
+  },
+  {
+    "epoch": 10,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.38699151387434444,
+    "train_dice": 1.1927297418483381e-09,
+    "val_loss": 0.3928009354405933,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 29.241490602493286
+  },
+  {
+    "epoch": 11,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.36756611127174926,
+    "train_dice": 1.193885727142466e-09,
+    "val_loss": 0.40256215466393364,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 30.326380491256714
+  },
+  {
+    "epoch": 12,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.3568860334838798,
+    "train_dice": 1.1926585576964675e-09,
+    "val_loss": 0.37471579843097264,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 30.627218008041382
+  },
+  {
+    "epoch": 13,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.3456128163184814,
+    "train_dice": 1.1924280344584718e-09,
+    "val_loss": 0.3866733058735176,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 30.01066303253174
+  },
+  {
+    "epoch": 14,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.33547263053471676,
+    "train_dice": 1.197574121755579e-09,
+    "val_loss": 0.37953958522390435,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 30.01507258415222
+  },
+  {
+    "epoch": 15,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.32852168808241405,
+    "train_dice": 1.1928219909246742e-09,
+    "val_loss": 0.3828637362630279,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 28.881051778793335
+  },
+  {
+    "epoch": 16,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.31821854773886454,
+    "train_dice": 1.1925720674849039e-09,
+    "val_loss": 0.3691689785983827,
+    "val_dice": 1.2058126775877837e-09,
+    "duration_seconds": 28.205366373062134
+  },
+  {
+    "epoch": 17,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.30777396736498586,
+    "train_dice": 0.5605606099286026,
+    "val_loss": 0.37542635919871153,
+    "val_dice": 0.3886046299186364,
+    "duration_seconds": 28.438281059265137
+  },
+  {
+    "epoch": 18,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.3017008364618661,
+    "train_dice": 0.5711544162694214,
+    "val_loss": 0.3830680231805201,
+    "val_dice": 0.3683123463968357,
+    "duration_seconds": 29.057905673980713
+  },
+  {
+    "epoch": 19,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.2985408138297125,
+    "train_dice": 0.5648458770606615,
+    "val_loss": 0.3609386301702923,
+    "val_dice": 0.40972626236853776,
+    "duration_seconds": 28.190368175506592
+  },
+  {
+    "epoch": 20,
+    "mode": "two_phase",
+    "phase": "fine_tuning",
+    "encoder_trainable": true,
+    "train_loss": 0.2827179117766554,
+    "train_dice": 0.598170676508031,
+    "val_loss": 0.3538815638533345,
+    "val_dice": 0.424244642947559,
+    "duration_seconds": 29.89108633995056
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "mode": "frozen_encoder",
+  "epoch": 20,
+  "best_val_dice": 0.35826473095806527
+}

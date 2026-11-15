@@ -1,0 +1,59 @@
+{
+  "fractured_jpgs": 717,
+  "nonfractured_jpgs": 3366,
+  "annotated_records": 715,
+  "json_entries": 717,
+  "unique_annotated_filenames": 717,
+  "polygon_regions": 912,
+  "region_labels": {
+    "fractured": 912
+  },
+  "vertex_count_distribution": {
+    "4": 1,
+    "5": 167,
+    "6": 233,
+    "7": 219,
+    "8": 118,
+    "9": 69,
+    "10": 47,
+    "11": 19,
+    "12": 13,
+    "13": 12,
+    "14": 6,
+    "15": 3,
+    "16": 3,
+    "17": 1,
+    "18": 1
+  },
+  "images_with_one_polygon": 549,
+  "images_with_multiple_polygons": 166,
+  "missing_corresponding_jpgs": [],
+  "malformed_annotations": [
+    {
+      "filename": "IMG0002342.jpg",
+      "region_index": 0,
+      "reason": "out-of-bounds coordinates"
+    },
+    {
+      "filename": "IMG0002345.jpg",
+      "region_index": 0,
+      "reason": "out-of-bounds coordinates"
+    },
+    {
+      "filename": "IMG0002345.jpg",
+      "region_index": 1,
+      "reason": "out-of-bounds coordinates"
+    },
+    {
+      "filename": "IMG0002345.jpg",
+      "region_index": 2,
+      "reason": "out-of-bounds coordinates"
+    },
+    {
+      "filename": "IMG0003341.jpg",
+      "region_index": 0,
+      "reason": "out-of-bounds coordinates"
+    }
+  ],
+  "valid_images": 715
+}

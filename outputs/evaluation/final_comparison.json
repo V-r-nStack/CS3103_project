@@ -1,0 +1,305 @@
+{
+  "description": "Read-only aggregation of existing experiment artifacts",
+  "evaluated_again": false,
+  "threshold_policy": {
+    "DeepLabV3+ experiments": 0.5,
+    "legacy experiments": "threshold as recorded in source artifact"
+  },
+  "test": [
+    {
+      "experiment": "Vanilla U-Net raw",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.23579770526910965,
+      "iou": 0.16317499018588713,
+      "precision": 0.28595529270968467,
+      "recall": 0.28330785111418516,
+      "hd95": 158.991498818523,
+      "bce": 0.0334706658333609,
+      "evaluated_images": 108,
+      "parameters": null,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": null,
+      "threshold": null,
+      "source_files": [
+        "outputs/evaluation/test_metrics.csv"
+      ],
+      "unavailable_metrics": [
+        "parameters",
+        "training_time_seconds",
+        "inference_seconds_per_image",
+        "threshold"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net raw - frozen encoder",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.48680900636125424,
+      "iou": 0.4144139701657693,
+      "precision": 0.6192838219533303,
+      "recall": 0.598487798284886,
+      "hd95": 70.60664730341905,
+      "bce": 0.019200974730429827,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.09623865728025083,
+      "threshold": null,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 101,
+      "source_files": [
+        "outputs/evaluation/resnet18_unet/frozen_encoder/resnet18_unet_summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net raw - two phase",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.4579252481572121,
+      "iou": 0.34979030865765215,
+      "precision": 0.6969729098754261,
+      "recall": 0.4426817882714733,
+      "hd95": 56.02243967725693,
+      "bce": 0.024495457637520437,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.09471617363117359,
+      "threshold": null,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 96,
+      "source_files": [
+        "outputs/evaluation/resnet18_unet/two_phase/resnet18_unet_summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net CLAHE - frozen encoder",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.5143314877963926,
+      "iou": 0.43370639303231795,
+      "precision": 0.6307745437419127,
+      "recall": 0.58760150031014,
+      "hd95": 98.27510786130037,
+      "bce": 0.022877428404710912,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.09753841161727905,
+      "threshold": 0.3,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 106,
+      "source_files": [
+        "outputs/evaluation/resnet_unet_with_clahe/frozen_encoder/summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net CLAHE - two phase",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.467629111739791,
+      "iou": 0.3548862400454465,
+      "precision": 0.5836662599630733,
+      "recall": 0.5117164696758244,
+      "hd95": 80.7155476321553,
+      "bce": 0.019132226309954637,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.09804794964966951,
+      "threshold": 0.3,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 99,
+      "source_files": [
+        "outputs/evaluation/resnet_unet_with_clahe/two_phase/summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "DeepLabV3+ ResNet18 raw",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.37202633423979,
+      "iou": 0.33677738056604445,
+      "precision": 0.5700514662892401,
+      "recall": 0.5002393344830875,
+      "hd95": 87.37283360913928,
+      "bce": 0.04494182704635292,
+      "parameters": 16602529,
+      "training_time_seconds": 665.4426164699998,
+      "inference_seconds_per_image": 0.011772099231603972,
+      "threshold": 0.5,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 92,
+      "source_files": [
+        "outputs/evaluation/deeplabv3plus_resnet18_raw/test_summary.json"
+      ],
+      "unavailable_metrics": []
+    },
+    {
+      "experiment": "DeepLabV3+ ResNet18 CLAHE",
+      "split": "test",
+      "status": "measured",
+      "dice": 0.36926908328964764,
+      "iou": 0.3182671578273997,
+      "precision": 0.6141606938606071,
+      "recall": 0.502788039183619,
+      "hd95": 89.12312497228714,
+      "bce": 0.038561700841118755,
+      "parameters": 16602529,
+      "training_time_seconds": 656.375033888009,
+      "inference_seconds_per_image": 0.011754986666818257,
+      "threshold": 0.5,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 81,
+      "source_files": [
+        "outputs/evaluation/deeplabv3plus_resnet18_clahe/test_summary.json"
+      ],
+      "unavailable_metrics": []
+    }
+  ],
+  "validation": [
+    {
+      "experiment": "ResNet18 U-Net raw - frozen encoder",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.501921544722186,
+      "iou": 0.4167709405215295,
+      "precision": 0.5815080614358039,
+      "recall": 0.5828834539207229,
+      "hd95": 102.88434268601998,
+      "bce": 0.022675711196993856,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.10531235624242712,
+      "threshold": null,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 98,
+      "source_files": [
+        "outputs/evaluation/resnet18_unet/frozen_encoder/validation/resnet18_unet_summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net raw - two phase",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.4324372584931773,
+      "iou": 0.3749721702025019,
+      "precision": 0.6205461832482934,
+      "recall": 0.4020311663676836,
+      "hd95": 86.26364318834747,
+      "bce": 0.031396438003327976,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.10790363726792512,
+      "threshold": null,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 93,
+      "source_files": [
+        "outputs/evaluation/resnet18_unet/two_phase/validation/resnet18_unet_summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net CLAHE - frozen encoder",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.46352779682363493,
+      "iou": 0.35765862212745875,
+      "precision": 0.5647053384036713,
+      "recall": 0.529781829946217,
+      "hd95": 116.45843069002782,
+      "bce": 0.02963044660929073,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.11198446927247224,
+      "threshold": 0.3,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 102,
+      "source_files": [
+        "outputs/evaluation/resnet_unet_with_clahe/frozen_encoder/validation/summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "ResNet18 U-Net CLAHE - two phase",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.43167639863213114,
+      "iou": 0.31688284376431114,
+      "precision": 0.5949835636599952,
+      "recall": 0.4615981613119527,
+      "hd95": 90.36463076139388,
+      "bce": 0.024037316055640717,
+      "parameters": 14499265,
+      "training_time_seconds": null,
+      "inference_seconds_per_image": 0.09632442394892375,
+      "threshold": 0.3,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 98,
+      "source_files": [
+        "outputs/evaluation/resnet_unet_with_clahe/two_phase/validation/summary.json"
+      ],
+      "unavailable_metrics": [
+        "training_time_seconds"
+      ]
+    },
+    {
+      "experiment": "DeepLabV3+ ResNet18 raw",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.3501853956786735,
+      "iou": 0.2974579850892097,
+      "precision": 0.5235229377121069,
+      "recall": 0.4387032100769209,
+      "hd95": 99.48228006954089,
+      "bce": 0.05045492313284841,
+      "parameters": 16602529,
+      "training_time_seconds": 665.4426164699998,
+      "inference_seconds_per_image": 0.01210187293519185,
+      "threshold": 0.5,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 91,
+      "source_files": [
+        "outputs/evaluation/deeplabv3plus_resnet18_raw/validation_summary.json"
+      ],
+      "unavailable_metrics": []
+    },
+    {
+      "experiment": "DeepLabV3+ ResNet18 CLAHE",
+      "split": "validation",
+      "status": "measured",
+      "dice": 0.36093730541968144,
+      "iou": 0.2821386490819721,
+      "precision": 0.5490530390323305,
+      "recall": 0.4900043720053378,
+      "hd95": 89.52592518388084,
+      "bce": 0.048135716597446136,
+      "parameters": 16602529,
+      "training_time_seconds": 656.375033888009,
+      "inference_seconds_per_image": 0.01194354085203452,
+      "threshold": 0.5,
+      "evaluated_images": 108,
+      "valid_hd95_cases": 84,
+      "source_files": [
+        "outputs/evaluation/deeplabv3plus_resnet18_clahe/validation_summary.json"
+      ],
+      "unavailable_metrics": []
+    }
+  ]
+}
