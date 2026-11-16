@@ -1,4 +1,4 @@
-# FracAtlas ResNet18 U-Net Results
+# FracAtlas Segmentation Results
 
 This document records the current segmentation experiments and their saved
 artifacts. The original notebook cells and original Vanilla U-Net implementation
@@ -76,6 +76,22 @@ saved empty-mask convention. `*` denotes the finite-case HD95 mean.
 Each ResNet18 model has `14,499,265` parameters. The displayed values are
 loaded from JSON summaries, not recomputed or estimated in this document.
 
+## DeepLabV3+ ResNet18 comparison
+
+The DeepLabV3+ experiments are reported separately because they use a
+different architecture and have complete timing summaries in the aggregated
+evaluation artifact. Both models were evaluated on the 108-image test split
+with threshold `0.5`.
+
+| Experiment | Dice | IoU | Precision | Recall | HD95 (px) | BCE | Training (s) | Inference (s/image) | Parameters |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Original images, DeepLabV3+ ResNet18 | 0.372026 | 0.336777 | 0.570051 | 0.500239 | 87.372834 | 0.044942 | 665.442616 | 0.011772 | 16,602,529 |
+| CLAHE images, DeepLabV3+ ResNet18 | 0.369269 | 0.318267 | 0.614161 | 0.502788 | 89.123125 | 0.038562 | 656.375034 | 0.011755 | 16,602,529 |
+
+The displayed values are loaded from
+`outputs/evaluation/final_comparison.json`; no DeepLabV3+ model was retrained
+to produce this report.
+
 ## Validation threshold selection for CLAHE
 
 | Mode | Selected threshold | Validation Dice at selected threshold |
@@ -148,6 +164,18 @@ lower `1e-5` encoder learning rate.
   or a versioned `resnet_unet_with_clahe_vN.json` when an existing configuration
   is preserved.
 
+### DeepLabV3+ ResNet18
+
+- Original-image test summary:
+  `outputs/evaluation/deeplabv3plus_resnet18_raw/test_summary.json`
+- Original-image validation summary:
+  `outputs/evaluation/deeplabv3plus_resnet18_raw/validation_summary.json`
+- CLAHE test summary:
+  `outputs/evaluation/deeplabv3plus_resnet18_clahe/test_summary.json`
+- CLAHE validation summary:
+  `outputs/evaluation/deeplabv3plus_resnet18_clahe/validation_summary.json`
+- Per-image metrics are stored in each experiment's `test_metrics.csv`.
+
 ## Source of the reported values
 
 The benchmark display loads:
@@ -157,7 +185,10 @@ The benchmark display loads:
 3. `outputs/evaluation/resnet_unet_with_clahe/frozen_encoder/summary.json`
 4. `outputs/evaluation/resnet_unet_with_clahe/two_phase/summary.json`
 5. `outputs/evaluation/vanilla_unet/vanilla_unet_summary.json`
+6. `outputs/evaluation/deeplabv3plus_resnet18_raw/test_summary.json`
+7. `outputs/evaluation/deeplabv3plus_resnet18_clahe/test_summary.json`
 
-Training times are summed from the corresponding saved
-`training_history.json` files. No previous model was retrained to produce this
+ResNet18 U-Net training times are summed from the corresponding saved
+`training_history.json` files; DeepLabV3+ timing values are loaded from the
+aggregated evaluation artifact. No previous model was retrained to produce this
 report.
