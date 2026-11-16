@@ -34,3 +34,6 @@ outputs/checkpoints/
 # Temporary logs and caches
 *.log
 *.tmp
+
+#secondary files for output
+outputs/research_report
